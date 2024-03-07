@@ -790,7 +790,6 @@ const lectureOne = [
   {
     question: "Characteristics of an embedded computer system include:",
     answers: [
-      "Includes a microcomputer like the Freescale 9S12",
       "Configured to perform a specific dedicated application",
       "Software programmed into ROM",
       "Software not accessible to the user of the device",
@@ -798,7 +797,6 @@ const lectureOne = [
       "Microcomputer embedded or hidden inside",
     ],
     correctAnswers: [
-      "Includes a microcomputer like the Freescale 9S12",
       "Configured to perform a specific dedicated application",
       "Software programmed into ROM",
       "Software not accessible to the user of the device",
