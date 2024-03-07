@@ -905,6 +905,7 @@ const lectureOne = [
       "Analysis => Design => Testing => Implementation => Analyze the problem (repeated)",
       "Engineering design => High-level design => Testing => Analyze the problem => Implementation => Analyze the problem (repeated)",
       "Testing => Analyze the problem => High-level design => Engineering design => Implementation => Analyze the problem (repeated)",
+      "Analyze the problem => High-level design => Engineering design => Implementation => Testing => Analyze the problem (repeated)",
     ],
     correctAnswers: [
       "Analyze the problem => High-level design => Engineering design => Implementation => Testing => Analyze the problem (repeated)",
