@@ -1,0 +1,147 @@
+body {
+  font-family: "ROBOTO", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flashcard-container {
+  width: 90%;
+  max-width: 500px;
+  /* Adjusted max-width for better fit on mobile */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  /* Reduced padding for better fit on mobile */
+  text-align: center;
+}
+
+.flashcard {
+  margin-bottom: 15px;
+  /* Reduced margin for better fit on mobile */
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.tab {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.tab.active {
+  background-color: #99ccff;
+}
+.sidebar {
+  /* Your existing styles */
+  transition: transform 0.3s ease;
+}
+
+.sidebar.collapsed {
+  transform: translateX(
+    -150px
+  ); /* Adjust this value based on your sidebar width */
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  /* Reduced margin for better fit on mobile */
+  flex-wrap: wrap;
+}
+
+.choice {
+  margin: 5px;
+  /* Reduced margin for better fit on mobile */
+  padding: 10px 15px;
+  /* Reduced padding for better fit on mobile */
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.toggle-arrow {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #f0f0f0;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1; /* Ensure the arrow is above the sidebar */
+}
+.choice:hover {
+  background-color: #ddd;
+}
+
+.correct-choice {
+  border-color: green;
+  background-color: #eaffea;
+}
+
+.wrong-choice {
+  border-color: red;
+  background-color: #ffecec;
+}
+
+.progress {
+  margin-top: 15px;
+  /* Reduced margin for better fit on mobile */
+  height: 15px;
+  /* Reduced height for better fit on mobile */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  /* Reduced border-radius for better fit on mobile */
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  border-radius: 8px;
+  /* Reduced border-radius for better fit on mobile */
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 15px;
+  /* Reduced padding for better fit on mobile */
+  background-color: #4caf50;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}

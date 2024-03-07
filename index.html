@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flashcard Quiz</title>
+</head>
+
+<body>
+
+        <!-- <div class="toggle-arrow" onclick="toggleSidebar()">➡</div>
+    <div class="sidebar">
+        <div class="tab" onclick="showSlide(1)">Slide 1</div>
+        <div class="tab" onclick="showSlide(2)">Slide 2</div>
+    </div> -->
+
+    <div class="flashcard-container">
+        <div class="flashcard">
+            <h2 id="question">What are the characteristics of a good comment according to the lecture?</h2>
+            <div class="choices">
+                <div class="choice" onclick="checkAnswer(this)">Energy</div>
+                <div class="choice" onclick="checkAnswer(this)">Time</div>
+                <div class="choice" onclick="checkAnswer(this)">Describing how it works</div>
+                <div class="choice" onclick="checkAnswer(this)">Describing why it is done in that way</div>
+                <div class="choice" onclick="checkAnswer(this)">How to change</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <p id="feedback"></p>
+            <button onclick="nextQuestion()">Next Question</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
